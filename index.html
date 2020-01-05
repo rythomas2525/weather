@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,30 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="backgroundPic">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <form class="form-inline my-2 my-lg-0 m-2">
             <input id="city-search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button id="select-city" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            <button id="select-city" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
 
     </nav>
 
-    <div class="container bg-dark mt-4 p-4 ">
+    <div class="container bg-light  mt-4 p-4 ">
         <div class="row">
 
 
             <div class="col-md-12 text-center">
-                <h1>Weather in<i class="city"></i></h1>
+                <h1>Weather <i class="city"></i></h1>
                 <div class="row">
                     <ul class="list-group col-md-2  text-center">
                         <h4>Search History</h4>
-                        <li class="list-group-item search" data-number="1"><i></i>Charlotte</li>
-                        <li class="list-group-item search" data-number="2"><i></i>Los Angeles</li>
-                        <li class="list-group-item search" data-number="3"><i></i>Salt Lake City</li>
-                        <li class="list-group-item search" data-number="4"><i></i>Denver</li>
-                        <li class="list-group-item search" data-number="5"><i></i>Miami</li>
+                        <li class="list-group-item search" data-number="1"></li>
+                        <li class="list-group-item search" data-number="2"></li>
+                        <li class="list-group-item search" data-number="3"></li>
+                        <li class="list-group-item search" data-number="4"></li>
+                        <li class="list-group-item search" data-number="5"></li>
                     </ul>
                     <div class="row m-2">
 
@@ -41,13 +42,14 @@
                             <div class="card-body">
 
                                 <h5 class="card-title">Today</h5>
-                                <p class="card-text temp">Current Temp</p>
-                                <p class="card-text desc1">Current Temp</p>
+                                <p class="card-text temp"></p>
+                                <p class="card-text desc1"></p>
+
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item humidity">Current humidity</li>
-                                <li class="list-group-item windspeed">Windspeed</li>
-                                <li class="list-group-item">UV index</li>
+                                <li class="list-group-item humidity"></li>
+                                <li class="list-group-item windspeed"></li>
+                                <li class="list-group-item index1"></li>
 
                             </ul>
 
@@ -56,14 +58,14 @@
                             <img src="" class="card-img-top img2" alt="" style="width: 160px;">
                             <div class="card-body">
                                 <h5 class="card-title">Tomorrow</h5>
-                                <p class="card-text tempmin2">Temp Min</p>
-                                <p class="card-text tempmax2">Temp Min</p>
-                                <p class="card-text desc2">Current Temp</p>
+                                <p class="card-text tempmin2"></p>
+                                <p class="card-text tempmax2"></p>
+                                <p class="card-text desc2"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item humidity2">Humidity</li>
-                                <li class="list-group-item windspeed2">Windspeed</li>
-                                <li class="list-group-item index2">UV index</li>
+                                <li class="list-group-item humidity2"></li>
+                                <li class="list-group-item windspeed2"></li>
+                                <li class="list-group-item date2"></li>
                             </ul>
 
                         </div>
@@ -71,14 +73,14 @@
                             <img src="" class="card-img-top img3" alt="" style="width: 160px;">
                             <div class="card-body">
                                 <h5 class="card-title">Day 3</h5>
-                                <p class="card-text tempmin3">Temp Min</p>
-                                <p class="card-text tempmax3">Temp Min</p>
-                                <p class="card-text desc3">Current Temp</p>
+                                <p class="card-text tempmin3"></p>
+                                <p class="card-text tempmax3"></p>
+                                <p class="card-text desc3"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item humidity3">Humidity</li>
-                                <li class="list-group-item windspeed3">Windspeed</li>
-                                <li class="list-group-item index3">UV index</li>
+                                <li class="list-group-item humidity3"></li>
+                                <li class="list-group-item windspeed3"></li>
+                                <li class="list-group-item date3"></li>
                             </ul>
 
                         </div>
@@ -87,14 +89,14 @@
                             <div class="card-body">
 
                                 <h5 class="card-title">Day 4</h5>
-                                <p class="card-text tempmin4">Temp Min</p>
-                                <p class="card-text tempmax4">Temp Min</p>
-                                <p class="card-text desc4">Current Temp</p>
+                                <p class="card-text tempmin4"></p>
+                                <p class="card-text tempmax4"></p>
+                                <p class="card-text desc4"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item humidity4">Humidity</li>
-                                <li class="list-group-item windspeed4">Windspeed</li>
-                                <li class="list-group-item index4">UV index</li>
+                                <li class="list-group-item humidity4"></li>
+                                <li class="list-group-item windspeed4"></li>
+                                <li class="list-group-item date4"></li>
                             </ul>
 
                         </div>
@@ -102,14 +104,15 @@
                             <img src="" class="card-img-top img5" alt="" style="width: 160px;">
                             <div class="card-body">
                                 <h5 class="card-title">Day 5</h5>
-                                <p class="card-text tempmin5">Temp Min</p>
-                                <p class="card-text tempmax5">Temp Min</p>
-                                <p class="card-text desc5">Current Temp</p>
+                                <p class="card-text tempmin5"></p>
+                                <p class="card-text tempmax5"></p>
+                                <p class="card-text desc5"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item humidity5">Humidity</li>
-                                <li class="list-group-item windspeed5">Windspeed</li>
-                                <li class="list-group-item index5">UV index</li>
+                                <li class="list-group-item humidity5"></li>
+                                <li class="list-group-item windspeed5"></li>
+                                <li class="list-group-item date5"></li>
+
                             </ul>
                         </div>
                     </div>

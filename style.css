@@ -1,0 +1,11 @@
+body {
+    background-image: url('images/world.jpg');
+}
+
+ .container {
+    opacity: 0.85;
+}
+
+nav {
+    opacity: 0.85;
+}
