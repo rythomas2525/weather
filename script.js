@@ -64,7 +64,7 @@ $(document).ready(function () {
             var lat = response.coord.lat
 
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
 
 
             $.ajax({
@@ -421,7 +421,7 @@ $(document).ready(function () {
             var lat = response.coord.lat
 
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
 
 
             $.ajax({
@@ -724,7 +724,7 @@ $(document).ready(function () {
             var lat = response.coord.lat
 
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
 
 
             $.ajax({
@@ -1027,7 +1027,7 @@ $(document).ready(function () {
             var lat = response.coord.lat
 
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
 
 
             $.ajax({
@@ -1330,7 +1330,7 @@ $(document).ready(function () {
             var lat = response.coord.lat
 
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
 
 
             $.ajax({
@@ -1633,7 +1633,7 @@ $(document).ready(function () {
             var lat = response.coord.lat
 
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=3235ace4163bd2550b9b7922dde40788&lat=" + lat + "&lon=" + lon;
 
 
             $.ajax({
