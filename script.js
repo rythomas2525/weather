@@ -1875,8 +1875,6 @@ $(document).ready(function () {
 
 
     function saveOnRefresh() {
-        var item = localStorage.getItem("searchItem", searchItem)
-
 
 
         // Storing the city
@@ -1885,16 +1883,23 @@ $(document).ready(function () {
 
         var searchItem = $(this).prev().val()
 
-
+        // grabbing string of cities out of local storage
         var item = localStorage.getItem("searchItem", (searchItem))
 
 
+        // turning the string of cities into an array
+        var ar = item.split(',');
 
-        console.log(item)
 
 
-        // inputCity = inputCity.replace(" ", "+");
-        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + item + "&APPID=3235ace4163bd2550b9b7922dde40788";
+        // grabbing the last city searched out of an array no matter how big of array
+        var lastCitySearchedArray = ar.slice(-1)[0]
+
+        console.log(lastCitySearchedArray);
+
+
+
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + lastCitySearchedArray + "&APPID=3235ace4163bd2550b9b7922dde40788";
 
         $.ajax({
             url: queryURL,
@@ -1967,7 +1972,7 @@ $(document).ready(function () {
             var APIKey = "3235ace4163bd2550b9b7922dde40788"
             var inputCity = $("#city-search").val().trim();
             // inputCity = inputCity.replace(" ", "+");
-            var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + item +
+            var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + lastCitySearchedArray +
                 "&APPID=" + APIKey;
             // var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=Salt+Lake+City&APPID=3235ace4163bd2550b9b7922dde40788"
 
