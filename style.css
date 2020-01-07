@@ -2,13 +2,13 @@ body {
     background-image: url('images/world.jpg');
 }
 
- .container {
+ /* .container {
     opacity: 0.8;
 }
 
 nav {
     opacity: 0.8;
-}
+} */
 
 .tempE {
     font-size: 18px;
